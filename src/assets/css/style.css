@@ -1,0 +1,40 @@
+*{margin: 0;padding: 0;}
+.flex-container{display: flex;}
+.flex1{flex:1}
+.flex2{flex:2;}
+.flex3{flex:3;}
+.flex4{flex:4;}
+.flex5{flex:5;}
+.flex6{flex:6;}
+.rol{justify-content: center;}
+.col{display: inline-block;margin: 5px;padding: 10px;}
+img{margin: 20px; width:250px}
+.btnComprar{margin: 20px; padding: 10px;border-radius: 15px; border: none; background-color: rgb(255, 230, 0);box-shadow: 1px 1px 1px 1px grey;}
+.btnComprar:hover{background-color:rgba(245, 206, 11);color: white;}
+.btnAnadir{margin: 20px; padding: 10px; border-radius: 15px; border: none; background-color: rgb(247, 188, 11);box-shadow: 1px 1px 1px 1px grey;}
+.btnAnadir:hover{background-color:rgb(247, 188, 11);color: white;}
+.circuloColor{width: 25px;height: 25px; border-radius: 50%;list-style:none;margin: 5px 15px;display:flex;flex-direction:row;align-items:center;}
+.main_div{display: flex; justify-content: center;}
+p{padding: 5px;font-family: Arial, Helvetica, sans-serif;}
+li{font-family: Arial, Helvetica, sans-serif; margin: 3px; padding: 3px;list-style: none;}
+h1{font-family:sans-serif;}
+h3{font-size: 2rem;}
+input[type="number"]{width: 50px;}
+input[type="search"]{width: 400px;padding: 2px;}
+span{color:blue}
+.min{width: 30px;display: inline-block;}
+.carrito{width: 50px; border-radius: 50%;}
+.lateral{border:solid 1px lightgray;border-radius: 10px;margin: 15px;}
+.center{text-align: center;}
+.divImg{border: solid 1px lightgrey;border-radius: 3px;}
+textarea{margin: 10px;border-radius: 5px;}
+.btn{background-color: orange;padding: 5px;border-radius: 5px;border: none;margin: 5px;display: inline-block;width: 100px;}
+.comentarios{background-color: rgb(253, 253, 253);border: solid 1px lightgray; border-radius: 5px;padding:3px;margin: 10px 5px;}
+.coments{margin: 10px;padding: 5px; border: solid 1px lightgray;border-radius: 5px;background-color: white;}
+.divTextArea{display: flex;flex-direction: column;justify-content: center;}
+select{width: 50px;margin: 10px;padding: 5px;border-radius: 5px;}
+.descrip{padding: 5px;margin: 10px;}
+.divCarrito{margin: 10px;padding: 5px; border: solid 1px lightgray;border-radius: 5px;background-color: rgba(236, 236, 236, 0.951);}
+hr{color: lightgray;opacity: 0.3;}
+.products{font-size: 1.5rem;margin:15px;padding: 10px;border: solid 1px gray;border-radius: 10px;text-align: center;}
+.estrella{width: 25px;margin: 2px;}
