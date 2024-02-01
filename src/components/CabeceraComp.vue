@@ -40,7 +40,7 @@ import CarritoComp from "@/components/CarritoComp.vue";
 export default {
     name: 'CabeceraComp',
     components: {
-        Store,
+        //Store,
         CarritoComp,
     },
     data: function(){
