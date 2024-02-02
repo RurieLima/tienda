@@ -1,5 +1,5 @@
 <template>
-    <div class="my-3">
+    <div class="my-3 divCarrito">
         <div class="col my-5">
             <h5 >Unidades: {{carritoCantidad}} | Total: <strong>{{precioTotal}}€</strong></h5>
         </div>
@@ -35,7 +35,7 @@ export default {
             this.Store.carrito = []
         }
     },
-    //para crear variables como de data, pero claculadas, realizando una function (calculo, etc) antes de enviar el resultado 
+    //para crear variables como de data, pero calculadas, realizando una function (calculo, etc) antes de enviar el resultado 
     computed : {
         precioTotal : function(){
             let suma = 0;
@@ -56,5 +56,6 @@ export default {
 }
 </script>
 <style scoped>
+.divCarrito{min-height: 70vh;}
 img{width: 75px;}
 </style>

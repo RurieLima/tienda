@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="divCompra">
         <div class="col">
             <div class="text-center">
                 <div class="my-3">
@@ -29,4 +29,5 @@ export default {
 </script>
 <style scoped>
 img{width: 50px;}
+.divCompra{min-height: 70vh;}
 </style>

@@ -30,23 +30,27 @@ export default {
         }
     },
     created : function (){
-        let url = "http://46.101.223.217/pcd/productos.php";
-        fetch(url)
-            .then(respuesta => respuesta.json())
-            .then(json => {
-                this.productos = json
-                // console.log(json)
-            })
+        //Cambios para subir en Githubpages -> No acepta links http...error mixed content
+        // let url = "http://46.101.223.217/pcd/productos.php";
+        // fetch(url)
+        //     .then(respuesta => respuesta.json())
+        //     .then(json => {
+        //         this.productos = json
+        //         // console.log(json)
+        //     })
+        //Cambios para subir en Githubpages -> No acepta links http...error mixed content
+        this.productos = this.Store.productos
+        console.log(this.Store)
     },
     // propiedades calculadas
     computed : {
-        productosFiltrados:function (){
-            const filtro = this.Store.filtro.toLowerCase();
-            const productos_filtrados = this.productos.filter(
-                producto=>producto.nombre.toLowerCase().includes(filtro)
-            )
-            return productos_filtrados
-        }
+         productosFiltrados:function (){
+             const filtro = this.Store.filtro.toLowerCase();
+             const productos_filtrados = this.productos.filter(
+                 producto=>producto.nombre.toLowerCase().includes(filtro)
+             )
+             return productos_filtrados
+         }
     }
 }
 </script>

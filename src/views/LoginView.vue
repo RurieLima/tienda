@@ -8,7 +8,7 @@
       <div class="my-3">
          <p>Elija el id de usuario:</p>   
         <select v-model="id" class="my-2">
-          <option v-for="numero in 49" :key="numero" :value="numero">{{numero}}</option>
+          <option v-for="numero in 9" :key="numero" :value="numero">{{numero}}</option>
         </select>
       </div>
       <div class="my-3">
@@ -28,16 +28,21 @@ export default {
   methods:{
     loginUsuario : function(){
         if(this.id!=""){
-           let url = "http://46.101.223.217/pcd/usuario.php?id="+this.id;
-            fetch(url)
-                .then(respuesta => respuesta.json())
-                .then(json => {
-                    console.log(json)
-                    this.Store.usuario = json;
-                    this.Store.loginUsuario = true
-                    console.log(this.Store)
-                    this.$router.push('/')
-            });
+          //Cambios para subir en Githubpages -> No acepta links http...error mixed content
+          //  let url = "http://46.101.223.217/pcd/usuario.php?id="+this.id;
+          //   fetch(url)
+          //       .then(respuesta => respuesta.json())
+          //       .then(json => {
+          //           this.Store.usuario = json;
+          //           this.Store.loginUsuario = true
+          //           console.log(this.Store)
+          //           this.$router.push('/')
+          //   });
+          //Cambios para subir en Githubpages -> No acepta links http...error mixed content
+          this.Store.usuario = this.Store.usuarios[this.id];
+          this.Store.loginUsuario = true
+          console.log(this.Store.usuario)
+          this.$router.push('/')
         }
 
     },
