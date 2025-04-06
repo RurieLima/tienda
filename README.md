@@ -1,5 +1,5 @@
 # Tienda
-✨ E-commerce en Vue, Boostrap, Css 
+✨ Proyecto Fin Curso - E-commerce en Vue, Boostrap, Css 
 =======
 ![Vue](	https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 ![Boostrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
